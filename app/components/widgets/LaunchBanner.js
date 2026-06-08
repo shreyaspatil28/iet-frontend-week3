@@ -8,10 +8,9 @@ export default function LaunchBanner() {
 
   useEffect(() => {
     const code = process.env.NEXT_PUBLIC_LAUNCH_CODE;
-    if (!code) {
-      throw new Error("Launch code is not defined.");
+    if (code) {
+      setLaunchCode(code);
     }
-    setLaunchCode(code);
     setReady(true);
   }, []);
 

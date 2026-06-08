@@ -1,4 +1,4 @@
-import LaunchBanner from "@/components/ui/LaunchBanner";
+import LaunchBanner from "./components/widgets/LaunchBanner";
 
 export default function Home() {
   return (
